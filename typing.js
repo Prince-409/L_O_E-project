@@ -5,7 +5,7 @@ thoughts me ho har choti cjion me ho jisse mujhe achcha lgta h...tumse pyaar hon
 baad mere me bhot sara chij  aaya patience, understanding, caring, loving...
 I wish I could be there today to see your smile, hear your laugh, and celebrate
 your birthday together. Until the day comes, please remember that no distance can
-ever change what you mean to me. Thank you for being you.Thank you for being mine.
+ever change what you mean to me. Thank you for being you.Thank you for being mine...
 `;
 
 let index = 0;
