@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Isha ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="animation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body class="welcome-body">
+
+    <!-- Background Music -->
+    <audio autoplay loop muted id="bg-music">
+        <source src="music1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Hearts -->
+    <div class="floating-hearts"></div>
+
+    <!-- Welcome Text -->
+    <div class="welcome-text">
+        <h1>Hey Isha…</h1>
+        <p>I made this world for you 💖</p>
+        <small class="tap-hint">Tap anywhere for sound 🎶</small>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = "story.html";
+        },10000); // Redirect after 10 seconds
+
+        document.body.addEventListener("click", () => {
+            const music = document.getElementById("bg-music");
+            music.muted = false;
+            music.play();
+        }, { once: true });
+    </script>
+
+</body>
+</html>

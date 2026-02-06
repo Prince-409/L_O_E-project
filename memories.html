@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Memories 📸</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="memory-body">
+
+    <h1 class="memory-title"> Our Beautiful Memories 💖 </h1>
+
+    <!-- SLIDER -->
+    <div class="slider">
+        <img id="slide" src="pic1.jpg" alt="Memory">
+        <p id="caption">A smile I never want to forget 💖</p>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+        <button onclick="prev()">⟨</button>
+        <button onclick="next()">⟩</button>
+    </div>
+
+    <div class="next-btn">
+        <a href="letter.html">Read My Letter 💌</a>
+    </div>
+
+    <!-- 🎵 Background Music -->
+    <audio autoplay loop muted id="memory-music">
+        <source src="music1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 🎵 Music activation -->
+    <script>
+        document.body.addEventListener("click", () => {
+            const music = document.getElementById("memory-music");
+            music.muted = false;
+            music.play();
+        }, { once: true });
+    </script>
+
+    <!-- ✅ SLIDER LOGIC (INLINE) -->
+    <script>
+        const images = [
+            { src: "pic1.jpg", caption: "A smile I never want to forget 💖" },
+            { src: "pic2.jpg", caption: "Every moment with you feels magical ✨" },
+            { src: "pic3.jpg", caption: "Your laugh is my favorite sound 💕" },
+            { src: "pic4.jpg", caption: "Memories I’ll always cherish 💞" },
+            { src: "pic5.jpg", caption: "With you, everything feels right 💗" },
+            { src: "pic6.jpg", caption: "Beautiful moments, endless love 🌹" }
+        ];
+
+        let index = 0;
+
+        const slide = document.getElementById("slide");
+        const caption = document.getElementById("caption");
+
+        function showImage(i) {
+            slide.src = images[i].src;
+            caption.textContent = images[i].caption;
+        }
+
+        function next() {
+            index = (index + 1) % images.length;
+            showImage(index);
+        }
+
+        function prev() {
+            index = (index - 1 + images.length) % images.length;
+            showImage(index);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Isha 🎂</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="final-body">
+
+    <!-- 🎵 Background Music -->
+    <audio autoplay loop muted id="final-music">
+        <source src="music1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+    <!-- Content -->
+    <div class="final-box">
+        <h1 class="birthday-title">Happy Birthday Isha 🎂💖</h1>
+
+        <p class="final-message">
+            Today isn’t just special because it’s your birthday,  
+            it’s special because <strong>you exist in my life</strong>.
+            <br><br>
+            This little world was made only for you —  
+            with love, smiles, and a heart that chose you.
+            <br><br>
+            This website ends here…  
+            <span>but what I feel for you doesn’t.</span> 💕
+        </p>
+
+        <p class="signature">
+            — Always yours,  
+            <br><strong>Prince 💖</strong>
+        </p>
+    </div>
+
+    <!-- 🎵 Music activation -->
+    <script>
+        document.body.addEventListener("click", () => {
+            const music = document.getElementById("final-music");
+            music.muted = false;
+            music.play();
+        }, { once: true });
+    </script>
+
+</body>
+</html>

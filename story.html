@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Little Forever 💞</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animations.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="story-body">
+
+    <h1 class="story-title">Our Little Forever 💖</h1>
+
+    <div class="timeline">
+
+        <div class="moment reveal">
+            <h2>The First Thought</h2>
+            <p>
+                I don’t remember the exact day,  
+                but I remember the feeling…  
+                when your name started appearing in my mind  
+                without any reason — and staying there.
+            </p>
+        </div>
+
+        <div class="moment reveal">
+            <h2>The First Smile</h2>
+            <p>
+                Your smile had something special, Isha.  
+                It wasn’t loud, it wasn’t dramatic —  
+                it was calm, warm, and somehow  
+                it felt like home.
+            </p>
+        </div>
+
+        <div class="moment reveal">
+            <h2>The Moment I Fell</h2>
+            <p>
+                I didn’t fall in love suddenly.  
+                I fell slowly — in conversations,  
+                in silences, in small moments…  
+                until one day I realized  
+                my heart had already chosen you.
+            </p>
+        </div>
+
+        <div class="moment reveal">
+            <h2>You Became My Safe Place</h2>
+            <p>
+                In a noisy world,  
+                you became my calm.  
+                In confusing days,  
+                you became my clarity.  
+                With you, everything feels a little lighter.
+            </p>
+        </div>
+
+        <div class="moment reveal">
+            <h2>And This Is Just The Beginning</h2>
+            <p>
+                This story doesn’t end here.  
+                This is just a chapter —  
+                a small one —  
+                in a book I want to keep writing  
+                with you, Isha… always 💕
+            </p>
+        </div>
+
+    </div>
+
+    <div class="next-btn">
+        <a href="heart.html">Go to My Heart ❤️</a>
+    </div>
+
+    <script>
+        // Scroll reveal animation
+        const reveals = document.querySelectorAll(".reveal");
+
+        window.addEventListener("scroll", () => {
+            reveals.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (top < windowHeight - 100) {
+                    el.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

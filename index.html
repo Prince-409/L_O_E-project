@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Only For You ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="lock-body">
+
+    <!-- Floating Hearts Background -->
+    <div class="hearts-bg"></div>
+
+    <!-- Lock Card -->
+    <div class="lock-card">
+        <h1>A Secret Place</h1>
+        <p>
+            Only one name can unlock this heart 💖  
+            <br><span>Hint: The most beautiful name ever 😉</span>
+        </p>
+
+        <input 
+            type="password" 
+            id="password" 
+            placeholder="Enter her name..."
+            autocomplete="off"
+        >
+
+        <button onclick="checkPassword()">Unlock My Heart ❤️</button>
+
+        <p id="error-msg"></p>
+    </div>
+
+    <!-- 🎵 Background Music -->
+    <audio autoplay loop muted id="lock-music">
+        <source src="music2.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- JS -->
+    <script src="password.js"></script>
+
+    <!-- 🎵 Music activation -->
+    <script>
+        document.body.addEventListener("click", () => {
+            const music = document.getElementById("lock-music");
+            music.muted = false;
+            music.play();
+        }, { once: true });
+    </script>
+
+</body>
+</html>

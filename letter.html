@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Letter For You 💌</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body class="letter-body">
+
+    <div class="letter-box">
+        <h1>Dear Isha 💖</h1>
+
+        <p id="typing"></p>
+        <span class="cursor">|</span>
+
+        <div class="next-btn">
+            <a href="final.html">One Last Surprise 🎂</a>
+        </div>
+    </div>
+
+    <!-- 🎵 Background Music -->
+    <audio autoplay loop muted id="letter-music">
+        <source src="music2.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- JS -->
+    <script src="typing.js"></script>
+
+    <!-- 🎵 Music activation -->
+    <script>
+        document.body.addEventListener("click", () => {
+            const music = document.getElementById("letter-music");
+            music.muted = false;
+            music.play();
+        }, { once: true });
+    </script>
+
+</body>
+</html>

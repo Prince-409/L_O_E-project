@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Heart ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="heart.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="heart-body">
+
+    <h1 class="heart-title">This heart beats for you, Isha ❤️</h1>
+
+    <!-- Heart -->
+    <div class="heart-container" id="heart">
+        ❤️
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-area">
+        <button class="yes-btn" onclick="openHeart(); playMusic();">
+            Open My Heart 💖
+        </button>
+        <button class="no-btn" id="noBtn">No 😈</button>
+    </div>
+
+    <!-- Hidden Message -->
+    <div class="heart-message" id="message">
+        <p>• You are my today</p>
+        <p>• You are my always</p>
+        <p>• Every beat whispers your name</p>
+        <p>• My heart chose you, Isha</p>
+        <p>• And it will… every time 💕</p>
+
+        <a href="memories.html">See Our Memories 📸</a>
+    </div>
+
+    <!-- 🔊 Background Music (ADDED) -->
+    <audio id="heart-music" loop>
+        <source src="music2.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- JS -->
+    <script src="heart.js"></script>
+
+    <!-- 🔊 Inline Music JS (ADDED) -->
+    <script>
+        function playMusic() {
+            const music = document.getElementById("heart-music");
+            music.play();
+        }
+    </script>
+
+</body>
+</html>
